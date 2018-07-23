@@ -15,6 +15,14 @@ class LearnFlexbox extends Component {
                         Welcome to Awesome App!
                     </Text>
                 </View>
+
+                <View style={styles.tabBar}>
+                    <View style={[styles.tabBarButton, styles.button1]} />
+                    <View style={[styles.tabBarButton, styles.button2]} />
+                    <View style={[styles.tabBarButton, styles.button3]} />
+                    <View style={[styles.tabBarButton, styles.button4]} />
+                    <View style={[styles.tabBarButton, styles.button5]} />
+                </View>
             </View>
         );
     }
@@ -51,7 +59,7 @@ const styles = StyleSheet.create({
         color: '#eeeeee',
     },
     tabBar: {
-        flexDirection: 'row',
+        height: 50
     },
     tabBarButton: {
         flex: 1
